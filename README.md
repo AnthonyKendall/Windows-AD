@@ -87,3 +87,76 @@ Review everything that you just setup and if its all checks out, then click on n
 
 ![image](https://github.com/user-attachments/assets/257fca2f-c8fa-4685-a741-ee64cb939078)
 
+Once you click on next, a prerequisite check will run. Once its done, you should see where it passed successfully. Once you see that, click on install. 
+
+![image](https://github.com/user-attachments/assets/0d9f70d7-fba8-4733-b62c-a2c0e31313fd)
+
+The installation process will take some time and the server will reboot. Just let the process run its course.
+
+![image](https://github.com/user-attachments/assets/e638eb81-9235-4766-8ec5-ef42c81a7b7a)
+
+Once the server reboots, sign back in and server manager will open automatically. Let that finish its boot process. Once everything is green, navigate to the tool's tab at the top right and select Active Directory Users and Computers to check to see AD. 
+
+![image](https://github.com/user-attachments/assets/4504f4c8-5a0d-4dca-b7d9-d1a4c2277154)
+
+Everything looks good on the AD side, now lets move over to DNS. 
+
+![image](https://github.com/user-attachments/assets/016d0555-40ef-41ab-8496-a9640dcfb7ba)
+
+Next, we need to create a reverse lookup zone on our local DNS server. 
+
+![image](https://github.com/user-attachments/assets/07d37156-3354-44de-9b90-d57d74138737)
+
+Right click the reverse lookup zone and select new zone. 
+
+![image](https://github.com/user-attachments/assets/8c798bea-955a-47d5-8f26-3bb08e45283d)
+
+Click next 
+
+![image](https://github.com/user-attachments/assets/9fad3c5d-1a29-4404-a058-34cc495a1206)
+
+Make sure primary zone is selected and then click next. 
+
+![image](https://github.com/user-attachments/assets/7685c5c6-2c58-428d-a4ca-3e4597889b34)
+
+Make sure the second option is selected and then click next 
+
+![image](https://github.com/user-attachments/assets/23edf87d-ea6a-4082-a187-34614a4ba6e6)
+
+Make sure IPv4 lookup zone is selected then click on next 
+
+![image](https://github.com/user-attachments/assets/22fbb126-b76e-496f-b50c-1297d91d4440)
+
+Next, type in the first 3 octets of the IP address of the server then click on next 
+
+![image](https://github.com/user-attachments/assets/8f80130b-8970-471c-a29c-55ec14801d26)
+
+Make sure only Dynamic updates are enabled and then click on next 
+
+![image](https://github.com/user-attachments/assets/b76730e5-01b2-4113-b636-fc734a755ce9)
+
+Make sure everything looks right. If so, then click on finish 
+
+![image](https://github.com/user-attachments/assets/bb8a6714-9aae-49bc-8f3c-45828a555a59)
+
+Now the reverse lookup zone was created. Now we need to create a pointer for it. So just right click inside of the reverse lookup zone and click on New pointer 
+
+![image](https://github.com/user-attachments/assets/fd20ebdc-1ebf-49c1-9d48-6f81043c4f54)
+
+Click on Browse 
+
+![image](https://github.com/user-attachments/assets/c0aa39d8-cc5e-4856-81be-74a25f4d79d4)
+
+Double click on your server name 
+
+![image](https://github.com/user-attachments/assets/458926c8-dd2d-4cec-a84e-3d6a991ace2f)
+
+Double click on forward lookup zone 
+
+![image](https://github.com/user-attachments/assets/143cf57e-bfa2-4be6-a3f1-db4a542fe234)
+
+Select your domain name that you created 
+
+![image](https://github.com/user-attachments/assets/696b7be4-0fe9-45e2-8102-22a211a440b8)
+
+
