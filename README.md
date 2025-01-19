@@ -15,7 +15,7 @@ Security and Access Control - Implementing security best practices through role-
 
 # Steps Taken
 
-First, name the server to an appropriate name you wish to make since with your enviroment. Additionally, give the server a static IP address. You can also check to make sure the time settings are setup as well. 
+First, name the server to an appropriate name you wish to make since with your environment. Additionally, give the server a static IP address. You can also check to make sure the time settings are setup as well. 
 
 ![image](https://github.com/user-attachments/assets/52f0a6ad-2319-481f-abe4-e1447f65cee5)
 
@@ -30,11 +30,11 @@ Click on the next button
 ![image](https://github.com/user-attachments/assets/726d8f7c-6956-47f7-bb41-6d13f8619fd8)
 
 
-Make sure the Role-based or feature-based installaion is selected and then click next. 
+Make sure the Role-based or feature-based installation is selected and then click next. 
 
 ![image](https://github.com/user-attachments/assets/21fe0086-ba62-45cc-b00e-45c17313bfbe)
 
-Make sure you have the "Select a server from the server pool" is selectd and your sever name is shown in the server pool. If it is, then click on next. 
+Make sure you have the "Select a server from the server pool" is selected and your sever name is shown in the server pool. If it is, then click on next. 
 
 ![image](https://github.com/user-attachments/assets/6a81f64c-86e2-4897-b988-2096523c203e)
 
@@ -47,7 +47,7 @@ Just click next on this page as everything is setup correctly
 
 ![image](https://github.com/user-attachments/assets/c77709fd-118d-474e-9396-c751bbe551fb)
 
-Click next to contuine on this page as well 
+Click next to continue on this page as well 
 
 ![image](https://github.com/user-attachments/assets/9b341b00-6e09-40d3-b83a-f2b4803d852d)
 
@@ -59,7 +59,7 @@ Review everything that you just selected to confirm if the information is correc
 
 ![image](https://github.com/user-attachments/assets/1867f048-8303-47b6-b219-55e529f4464e)
 
-Once everythings gets installed, you should see the bar fully complete and the option to promote the server to a domain controller. Click on "Promote this server to a domain controller"
+Once everything gets installed, you should see the bar fully complete and the option to promote the server to a domain controller. Click on "Promote this server to a domain controller"
 
 ![image](https://github.com/user-attachments/assets/17b2451a-749c-4100-9a96-7e1403ca6b0d)
 
@@ -159,4 +159,26 @@ Select your domain name that you created
 
 ![image](https://github.com/user-attachments/assets/696b7be4-0fe9-45e2-8102-22a211a440b8)
 
+Once you select your domain, scroll down and click on your server and click on okay.
 
+![image](https://github.com/user-attachments/assets/31bf55f7-7e40-42c2-95ac-2c8730328525)
+
+Make sure to check everything out. If everything adds up, then click on okay. 
+
+![image](https://github.com/user-attachments/assets/ab52cf9f-8741-454b-894d-bac6d645c46b)
+
+The pointer is now here. 
+
+![image](https://github.com/user-attachments/assets/37265294-95fc-48cb-bd90-8af5a7ca0667)
+
+Please note, now the Windows servers DNS points to the loopback address. You want to change this since this will be a domain controller. So go to the networking tab and change the DNS IP address to the servers IP address. 
+
+![image](https://github.com/user-attachments/assets/b16f382e-543d-4043-bd16-fb52a265e381)
+
+![image](https://github.com/user-attachments/assets/72ff670a-a6cf-4906-aa21-9799682cedd8)
+
+Change this to the servers IP address and then click on okay. 
+
+![image](https://github.com/user-attachments/assets/f1773dac-af1d-4767-9d04-c1c65da483a7)
+
+Once you have done all these steps, you have successfully configured Active Directory and a domain controller.
